@@ -1,6 +1,5 @@
 package com.erice.vsc
 
-import javafx.scene.Parent
 import tornadofx.View
 import tornadofx.canvas
 import tornadofx.pane
@@ -11,8 +10,9 @@ import tornadofx.pane
  */
 
 class NodePane: View() {
+    val nodesController: NodesController by inject()
     override val root = pane{
-        canvas{
+        nodesController.canvas = canvas{
 
         }
     }

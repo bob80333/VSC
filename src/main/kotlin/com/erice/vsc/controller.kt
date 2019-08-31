@@ -1,5 +1,6 @@
 package com.erice.vsc
 
+import javafx.scene.canvas.Canvas
 import tornadofx.Controller
 
 
@@ -9,4 +10,8 @@ import tornadofx.Controller
 
 class WorkspaceController : Controller() {
 
+}
+
+class NodesController: Controller() {
+    lateinit var canvas: Canvas
 }
