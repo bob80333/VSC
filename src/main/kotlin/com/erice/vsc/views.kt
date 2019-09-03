@@ -1,6 +1,7 @@
 package com.erice.vsc
 
 import tornadofx.View
+import tornadofx.borderpane
 import tornadofx.canvas
 import tornadofx.pane
 
@@ -17,4 +18,11 @@ class NodePane: View() {
         }
     }
 
+}
+
+class MainWindow: View() {
+    val mainWindowController: MainWindowController by inject()
+    override val root = borderpane {
+
+    }
 }
